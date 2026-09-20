@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BigSky Raptors Airsoft | Billings, Montana</title>
+<meta name="description" content="BigSky Raptors Airsoft (BSR) — airsoft team and field in Billings, Montana. Rental M4s and face protection, safety rules, location and contact.">
+<meta name="theme-color" content="#0b0b0d">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<meta property="og:title" content="BigSky Raptors Airsoft | Billings, Montana">
+<meta property="og:description" content="Airsoft in Billings, Montana. Rental gear, safety rules, location and contact.">
+<meta property="og:image" content="images/BigSkyRaptorsLogoNew.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0b0d;
+  --bg2:#121215;
+  --panel:#17171b;
+  --line:#2a2a30;
+  --red:#e0262b;
+  --red-hot:#ff3b3f;
+  --red-deep:#7d0f1a;
+  --steel:#a9adb3;
+  --steel-lt:#d7d9dd;
+  --text:#ececee;
+  --muted:#8d9098;
+  --radius:6px;
+  --maxw:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{
+  font-family:"Barlow","Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.display{font-family:"Oswald","Bebas Neue","Arial Narrow",Impact,sans-serif;text-transform:uppercase;letter-spacing:.04em;font-weight:700;line-height:1.1}
+a{color:inherit}
+img,svg{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--red);color:#fff;padding:8px 14px;z-index:200;border-radius:4px}
+.skip:focus{left:8px}
+
+/* ---------- header ---------- */
+header.site{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(11,11,13,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:48px;width:auto;filter:drop-shadow(0 0 8px rgba(224,38,43,.45))}
+.brand span{font-family:"Oswald","Arial Narrow",Impact,sans-serif;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:1.05rem;line-height:1.05}
+.brand span small{display:block;color:var(--red);font-size:.68rem;letter-spacing:.32em;font-weight:600}
+nav.main ul{display:flex;gap:26px;list-style:none;align-items:center}
+nav.main a{
+  text-decoration:none;text-transform:uppercase;letter-spacing:.14em;font-size:.8rem;font-weight:600;color:var(--steel-lt);
+  padding:6px 0;border-bottom:2px solid transparent;transition:.2s;
+}
+nav.main a:hover,nav.main a:focus-visible{color:#fff;border-color:var(--red)}
+nav.main a.cta{background:var(--red);color:#fff;padding:9px 16px;border-radius:3px;border:0;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px))}
+nav.main a.cta:hover{background:var(--red-hot)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:#fff;width:44px;height:44px;border-radius:4px;cursor:pointer}
+.menu-btn svg{margin:auto}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;min-height:100vh;display:flex;align-items:center;padding:120px 0 80px;overflow:hidden;
+  background:
+    radial-gradient(900px 500px at 78% 42%,rgba(224,38,43,.22),transparent 65%),
+    radial-gradient(600px 400px at 10% 100%,rgba(125,15,26,.25),transparent 70%),
+    var(--bg);
+}
+.hero::before{ /* tactical grid */
+  content:"";position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+  background-size:44px 44px;mask-image:radial-gradient(ellipse at 60% 50%,#000 30%,transparent 80%);
+  -webkit-mask-image:radial-gradient(ellipse at 60% 50%,#000 30%,transparent 80%);
+}
+.hero::after{ /* scanlines */
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 1px,transparent 1px 3px);opacity:.5;
+}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;width:100%}
+.eyebrow{font-family:"Oswald",sans-serif;color:var(--red);letter-spacing:.34em;text-transform:uppercase;font-size:.85rem;font-weight:600;display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.eyebrow::before{content:"";width:38px;height:2px;background:var(--red)}
+.hero h1{font-size:clamp(2.6rem,7vw,5.4rem);margin-bottom:8px}
+.hero h1 .red{color:var(--red);text-shadow:0 0 28px rgba(224,38,43,.5)}
+.hero h1 .steel{background:linear-gradient(180deg,#f4f5f7,#8b8f96);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{color:var(--steel);font-size:1.15rem;max-width:520px;margin:20px 0 32px}
+.btns{display:flex;flex-wrap:wrap;gap:14px}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.14em;font-weight:600;font-size:.9rem;
+  padding:14px 26px;border-radius:3px;border:2px solid var(--red);transition:.2s;cursor:pointer;
+  clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px));
+}
+.btn.solid{background:var(--red);color:#fff}
+.btn.solid:hover,.btn.solid:focus-visible{background:var(--red-hot);border-color:var(--red-hot);box-shadow:0 0 24px rgba(224,38,43,.5)}
+.btn.ghost{background:transparent;color:#fff}
+.btn.ghost:hover,.btn.ghost:focus-visible{background:rgba(224,38,43,.15)}
+.hero-art{position:relative;display:grid;place-items:center}
+.hero-art .reticle{position:absolute;width:118%;max-width:640px;opacity:.55;animation:spin 90s linear infinite}
+.hero-art img.logo{height:auto;position:relative;width:min(70%,340px);filter:drop-shadow(0 0 30px rgba(224,38,43,.55));animation:float 6s ease-in-out infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes float{50%{transform:translateY(-10px)}}
+.stats{display:flex;gap:34px;margin-top:44px;flex-wrap:wrap}
+.stats div{border-left:2px solid var(--red);padding-left:14px}
+.stats b{display:block;font-family:"Oswald",sans-serif;font-size:1.6rem;letter-spacing:.06em}
+.stats span{color:var(--muted);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase}
+.scroll-cue{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);z-index:2;color:var(--muted);font-size:.7rem;letter-spacing:.3em;text-transform:uppercase}
+
+/* ---------- sections ---------- */
+section{padding:96px 0;position:relative}
+section.alt{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sec-head{margin-bottom:46px;max-width:720px}
+.sec-head h2{font-size:clamp(2rem,4.5vw,3.2rem);margin-bottom:12px}
+.sec-head h2 em{font-style:normal;color:var(--red)}
+.sec-head p{color:var(--steel)}
+.tag{font-family:"Oswald",sans-serif;color:var(--red);letter-spacing:.34em;text-transform:uppercase;font-size:.78rem;font-weight:600;margin-bottom:10px;display:block}
+
+.grid{display:grid;gap:22px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{
+  background:linear-gradient(180deg,var(--panel),#101013);border:1px solid var(--line);border-radius:var(--radius);padding:28px;position:relative;transition:.25s;
+}
+.card::before{content:"";position:absolute;top:-1px;left:-1px;width:34px;height:34px;border-top:2px solid var(--red);border-left:2px solid var(--red);border-top-left-radius:var(--radius)}
+.card:hover{transform:translateY(-4px);border-color:#3a3a42;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.card .ico{width:54px;height:54px;color:var(--red);margin-bottom:16px}
+.card h3{font-size:1.3rem;margin-bottom:8px}
+.card p{color:var(--steel);font-size:.98rem}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about p+p{margin-top:14px}
+.about p{color:var(--steel)}
+.about strong{color:#fff}
+.bb-field{position:relative;aspect-ratio:1/1;max-width:420px;margin:auto;width:100%}
+
+/* rentals */
+.rent{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.rent .card{padding:0;overflow:hidden}
+.rent .art{background:radial-gradient(circle at 50% 60%,rgba(224,38,43,.22),transparent 70%),#0e0e11;border-bottom:1px solid var(--line);padding:26px;display:grid;place-items:center;min-height:190px}
+.rent .art svg{width:100%;max-width:360px;height:auto}
+.rent .body{padding:26px 28px 28px}
+.rent .price{display:inline-block;margin-top:14px;font-family:"Oswald",sans-serif;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem;color:#fff;background:var(--red-deep);border:1px solid var(--red);padding:5px 12px;border-radius:2px}
+.rent ul{list-style:none;margin-top:12px}
+.rent li{color:var(--steel);font-size:.95rem;padding:5px 0 5px 22px;position:relative;border-bottom:1px dashed var(--line)}
+.rent li::before{content:"";position:absolute;left:0;top:13px;width:9px;height:9px;background:var(--red);transform:rotate(45deg)}
+.note{margin-top:26px;padding:16px 20px;border-left:3px solid var(--red);background:rgba(224,38,43,.07);color:var(--steel);font-size:.95rem;border-radius:0 var(--radius) var(--radius) 0}
+.note b{color:#fff}
+
+/* safety */
+.rules{counter-reset:r;list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:16px 26px}
+.rules li{counter-increment:r;display:grid;grid-template-columns:52px 1fr;gap:14px;align-items:start;padding:18px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel)}
+.rules li::before{content:counter(r,decimal-leading-zero);font-family:"Oswald",sans-serif;font-size:1.9rem;color:var(--red);line-height:1}
+.rules b{display:block;font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:1.05rem;margin-bottom:2px}
+.rules span{color:var(--steel);font-size:.94rem}
+
+/* location */
+.loc{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:stretch}
+.loc .info{display:flex;flex-direction:column;gap:18px}
+.coords{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;background:#0a0a0c;border:1px solid var(--line);border-left:3px solid var(--red);padding:14px 16px;border-radius:4px;color:var(--steel-lt);font-size:.95rem;line-height:1.7}
+.coords small{display:block;color:var(--muted);letter-spacing:.2em;font-size:.68rem;text-transform:uppercase}
+.map{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;min-height:380px;position:relative;background:#0e0e11}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;filter:grayscale(.85) invert(.92) contrast(.9) hue-rotate(180deg)}
+.map .corner{position:absolute;width:26px;height:26px;border:2px solid var(--red);pointer-events:none}
+.map .tl{top:8px;left:8px;border-right:0;border-bottom:0}.map .tr{top:8px;right:8px;border-left:0;border-bottom:0}
+.map .bl{bottom:8px;left:8px;border-right:0;border-top:0}.map .br{bottom:8px;right:8px;border-left:0;border-top:0}
+.checklist{list-style:none}
+.checklist li{padding:6px 0 6px 26px;position:relative;color:var(--steel)}
+.checklist li::before{content:"";position:absolute;left:0;top:14px;width:12px;height:2px;background:var(--red)}
+
+/* schedule */
+.sched{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.sched .card .when{font-family:"Oswald",sans-serif;color:var(--red);letter-spacing:.2em;text-transform:uppercase;font-size:.8rem;margin-bottom:6px}
+
+/* faq */
+details{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);margin-bottom:12px}
+summary{cursor:pointer;list-style:none;padding:18px 22px;font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:1.05rem;display:flex;justify-content:space-between;gap:16px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--red);font-size:1.6rem;line-height:1;transition:.2s}
+details[open] summary::after{transform:rotate(45deg)}
+details[open]{border-color:#3a3a42}
+details p{padding:0 22px 20px;color:var(--steel)}
+.faq{max-width:820px}
+
+/* contact */
+.contact{text-align:center;background:
+  radial-gradient(700px 300px at 50% 0%,rgba(224,38,43,.2),transparent 70%),var(--bg2)}
+.contact .sec-head{margin:0 auto 34px}
+.contact .btns{justify-content:center}
+.contact-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:50px;text-align:left}
+.contact-cards .card h3{font-size:1.1rem}
+.contact-cards a.link{color:var(--red-hot);text-decoration:none;font-weight:600}
+.contact-cards a.link:hover{text-decoration:underline}
+
+footer{border-top:1px solid var(--line);padding:38px 0;background:#08080a;color:var(--muted);font-size:.88rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+footer img{height:54px;width:auto}
+footer .fl{display:flex;align-items:center;gap:14px}
+footer a{color:var(--steel);text-decoration:none}
+footer a:hover{color:#fff}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+
+:focus-visible{outline:2px solid var(--red-hot);outline-offset:3px}
+
+/* ---------- responsive ---------- */
+@media (max-width:920px){
+  .hero .wrap,.about,.loc,.rent{grid-template-columns:1fr}
+  .hero-art{order:-1;margin-bottom:10px}
+  .hero-art img.logo{width:min(46%,220px)}
+  .hero-art .reticle{width:90%;max-width:360px}
+  .g3,.sched,.contact-cards{grid-template-columns:1fr}
+  .rules{grid-template-columns:1fr}
+  .hero{padding-top:100px}
+  .scroll-cue{display:none}
+}
+@media (max-width:760px){
+  .menu-btn{display:flex}
+  nav.main{position:fixed;top:68px;left:0;right:0;background:rgba(11,11,13,.97);border-bottom:1px solid var(--line);max-height:0;overflow:hidden;transition:max-height .3s}
+  nav.main.open{max-height:80vh}
+  nav.main ul{flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 20px}
+  nav.main li a{display:block;padding:14px 0;border-bottom:1px solid var(--line)}
+  nav.main a.cta{text-align:center;margin-top:14px}
+  section{padding:70px 0}
+  .g2{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- SVG symbol library -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-target" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+      <circle cx="32" cy="32" r="20"/><circle cx="32" cy="32" r="9"/><circle cx="32" cy="32" r="2" fill="currentColor"/>
+      <path d="M32 4v12M32 48v12M4 32h12M48 32h12"/>
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M32 6l20 7v16c0 13-8.5 22-20 27C20.500 51 12 42 12 29V13z"/><path d="M22 32l7 7 13-14"/>
+    </symbol>
+    <symbol id="i-team" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="20" r="8"/><path d="M16 52c0-9 7-15 16-15s16 6 16 15"/><circle cx="12" cy="26" r="5"/><circle cx="52" cy="26" r="5"/><path d="M2 46c0-6 4-10 10-10M62 46c0-6-4-10-10-10"/>
+    </symbol>
+    <symbol id="i-map" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M32 60S12 40 12 26a20 20 0 0140 0c0 14-20 34-20 34z"/><circle cx="32" cy="26" r="7"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round">
+      <rect x="6" y="12" width="52" height="40" rx="4"/><path d="M8 16l24 20 24-20"/>
+    </symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.8s-1.3-.2-2.5-.2c-2.600 0-4.300 1.600-4.300 4.400v2.500H7.300v3.300h2.800V22z"/>
+    </symbol>
+    <symbol id="i-bb" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+      <circle cx="40" cy="32" r="9" fill="currentColor" stroke="none"/><path d="M6 32h18M10 24h12M10 40h12" opacity=".8"/>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="32" r="24"/><path d="M32 16v16l11 7"/>
+    </symbol>
+    <symbol id="i-flag" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 58V8"/><path d="M14 10h34l-8 10 8 10H14"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="BigSky Raptors Airsoft home">
+      <img src="images/bsr_logo.png" alt="BigSky Raptors emblem">
+      <span>BigSky Raptors<small>Airsoft</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="main" id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#rentals">Rentals</a></li>
+        <li><a href="#safety">Safety</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a class="cta" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Billings, Montana</span>
+      <h1><span class="steel">BigSky</span><br><span class="red">Raptors</span><br><span class="steel">Airsoft</span></h1>
+      <p class="lead">Fast, fair, and full of adrenaline. Gear up, squad up, and take flight on Montana's big-sky battlefield.</p>
+      <div class="btns">
+        <a class="btn solid" href="#rentals">Rent Gear</a>
+        <a class="btn ghost" href="#location">Find the Field</a>
+      </div>
+      <div class="stats">
+        <div><b>BSR</b><span>Est. Billings, MT</span></div>
+        <div><b>All Levels</b><span>Newbies welcome</span></div>
+        <div><b>Safety 1st</b><span>Every game</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <!-- rotating reticle -->
+      <svg class="reticle" viewBox="0 0 400 400" fill="none" stroke="#e0262b" aria-hidden="true">
+        <circle cx="200" cy="200" r="190" stroke-width="1.5" stroke-dasharray="2 10"/>
+        <circle cx="200" cy="200" r="160" stroke-width="1"/>
+        <circle cx="200" cy="200" r="120" stroke-width="1" stroke-dasharray="40 14" opacity=".7"/>
+        <g stroke-width="2">
+          <path d="M200 0v36M200 364v36M0 200h36M364 200h36"/>
+          <path d="M200 60v22M200 318v22M60 200h22M318 200h22" opacity=".6"/>
+        </g>
+      </svg>
+      <img class="logo" src="images/bsr_logo.png" alt="BigSky Raptors polygon raptor emblem" width="496" height="739">
+    </div>
+  </div>
+  <div class="scroll-cue">Scroll</div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap">
+    <div class="about">
+      <div class="reveal">
+        <span class="tag">Who We Are</span>
+        <div class="sec-head" style="margin-bottom:24px"><h2>Built on <em>teamwork</em>.<br>Played with respect.</h2></div>
+        <p><strong>BigSky Raptors Airsoft (BSR)</strong> is a Billings, Montana airsoft team for players who love tactical, team-driven play — and for anyone curious enough to try it for the first time.</p>
+        <p>Airsoft is a sport where players use spring, electric, or gas-powered replicas that fire small 6&nbsp;mm plastic BBs. It rewards communication, movement, and good sportsmanship. Whether you're a seasoned operator or lacing up for your first game, there's a spot on the team for you.</p>
+      </div>
+      <div class="grid g2 reveal">
+        <div class="card"><svg class="ico"><use href="#i-team"/></svg><h3>Squad Play</h3><p>Team-based objectives and friendly rivalry.</p></div>
+        <div class="card"><svg class="ico"><use href="#i-shield"/></svg><h3>Safety First</h3><p>Eye and face protection required. Always.</p></div>
+        <div class="card"><svg class="ico"><use href="#i-target"/></svg><h3>All Skill Levels</h3><p>New players get a friendly briefing before they play.</p></div>
+        <div class="card"><svg class="ico"><use href="#i-bb"/></svg><h3>Rental Ready</h3><p>Don't own gear? Borrow ours and get in the game.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GAME MODES ================= -->
+<section class="alt" id="modes">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">On the Field</span>
+      <h2>Game <em>Modes</em></h2>
+      <p>A few of the formats you can expect. Specific scenarios and schedules will be posted on our Facebook page.</p>
+    </div>
+    <div class="grid g3">
+      <div class="card reveal"><svg class="ico"><use href="#i-flag"/></svg><h3>Capture the Flag</h3><p>Two teams, one flag each. Sneak in, grab it, and get it home before the clock runs out.</p></div>
+      <div class="card reveal"><svg class="ico"><use href="#i-target"/></svg><h3>Team Deathmatch</h3><p>Classic elimination. Last squad standing takes the round.</p></div>
+      <div class="card reveal"><svg class="ico"><use href="#i-map"/></svg><h3>Objective Ops</h3><p>Defend, extract, or seize points on the map. Communication wins games.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RENTALS ================= -->
+<section id="rentals">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">No Gear? No Problem.</span>
+      <h2>Rental <em>Gear</em></h2>
+      <p>Show up ready to play. Rental gear is available for new players and guests.</p>
+    </div>
+    <div class="rent">
+      <article class="card reveal">
+        <div class="art">
+          <!-- M4 carbine (generic silhouette) -->
+          <svg viewBox="0 0 420 150" role="img" aria-label="M4 style airsoft rifle illustration">
+            <defs>
+              <linearGradient id="gm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a4d54"/><stop offset="1" stop-color="#1b1c20"/></linearGradient>
+            </defs>
+            <g stroke="#0a0a0c" stroke-width="1.5" stroke-linejoin="round">
+              <!-- stock -->
+              <path d="M8 58l62-6v36l-54 8c-6 1-10-2-10-8z" fill="url(#gm)"/>
+              <rect x="70" y="52" width="24" height="26" fill="#2a2b30"/>
+              <!-- receiver -->
+              <path d="M94 46h112l6 6v30H94z" fill="url(#gm)"/>
+              <path d="M112 38h84v8h-84z" fill="#2f3036"/>
+              <!-- carry rail / sights -->
+              <rect x="112" y="33" width="84" height="5" fill="#e0262b" stroke="none"/>
+              <path d="M118 33v-8h6v8M184 33v-6h6v6" fill="#2f3036"/>
+              <!-- handguard -->
+              <rect x="212" y="46" width="98" height="30" rx="3" fill="url(#gm)"/>
+              <path d="M222 46v30M236 46v30M250 46v30M264 46v30M278 46v30M292 46v30" stroke="#0a0a0c" stroke-width="1.5" fill="none" opacity=".7"/>
+              <!-- barrel + muzzle -->
+              <rect x="310" y="56" width="52" height="8" fill="#26272b"/>
+              <rect x="360" y="52" width="34" height="16" rx="2" fill="#1b1c20"/>
+              <path d="M368 52v16M376 52v16M384 52v16" stroke="#3a3b41" fill="none"/>
+              <!-- magazine -->
+              <path d="M140 82h30l-6 46h-28z" fill="#26272b"/>
+              <!-- grip -->
+              <path d="M100 82h24l-10 44c-1 3-4 4-7 3l-12-4c-3-1-4-3-3-6z" fill="#26272b"/>
+              <!-- trigger guard -->
+              <path d="M126 82c0 10 6 14 14 14" fill="none" stroke="#0a0a0c" stroke-width="3"/>
+            </g>
+            <!-- orange safety tip -->
+            <rect x="388" y="52" width="6" height="16" fill="#ff7a1a"/>
+          </svg>
+        </div>
+        <div class="body">
+          <h3>M4 Rental Rifle</h3>
+          <p>A standard M4-style airsoft rifle — simple, reliable, and perfect for first-timers.</p>
+          <ul>
+            <li>Standard M4 platform</li>
+            <li>Battery / magazine included</li>
+            <li>Quick handling walkthrough</li>
+          </ul>
+          <span class="price">Pricing: Coming soon</span>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="art">
+          <!-- face mask -->
+          <svg viewBox="0 0 320 220" role="img" aria-label="Airsoft face mask illustration">
+            <defs>
+              <linearGradient id="gk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b3d43"/><stop offset="1" stop-color="#17181b"/></linearGradient>
+              <clipPath id="mk"><path d="M60 40c30-16 70-22 100-22s70 6 100 22c8 40 4 90-20 128-16 24-50 36-80 36s-64-12-80-36C56 130 52 80 60 40z"/></clipPath>
+            </defs>
+            <!-- straps -->
+            <path d="M58 70C20 74 10 100 10 128M262 70c38 4 48 30 48 58" fill="none" stroke="#2a2b30" stroke-width="14" stroke-linecap="round"/>
+            <path d="M60 40c30-16 70-22 100-22s70 6 100 22c8 40 4 90-20 128-16 24-50 36-80 36s-64-12-80-36C56 130 52 80 60 40z" fill="url(#gk)" stroke="#0a0a0c" stroke-width="2"/>
+            <g clip-path="url(#mk)" stroke="#0a0a0c" stroke-width="1.6" opacity=".95">
+              <path d="M40 76h240M40 92h240M40 108h240M40 124h240M40 140h240M40 156h240M40 172h240M40 188h240"/>
+              <path d="M84 20v200M108 20v200M132 20v200M156 20v200M180 20v200M204 20v200M228 20v200M252 20v200" opacity=".55"/>
+            </g>
+            <!-- brow / forehead pad -->
+            <path d="M62 44c30-16 66-22 98-22s68 6 98 22l-4 22c-30-10-62-14-94-14s-64 4-94 14z" fill="#2a2b30" stroke="#0a0a0c" stroke-width="2"/>
+            <path d="M74 56c26-8 56-12 86-12s60 4 86 12" fill="none" stroke="#e0262b" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="body">
+          <h3>Face Mask &amp; Eye Protection</h3>
+          <p>Required to play. Rental masks give full face coverage so you can focus on the game, not the sting.</p>
+          <ul>
+            <li>Full-face protection</li>
+            <li>Adjustable straps</li>
+            <li>Sanitized between uses</li>
+          </ul>
+          <span class="price">Pricing: Coming soon</span>
+        </div>
+      </article>
+    </div>
+    <p class="note reveal"><b>Heads up:</b> Rental inventory and pricing will be updated soon. Message us on <a href="https://www.facebook.com/bigskyraptors" target="_blank" rel="noopener" style="color:var(--red-hot)">Facebook</a> to reserve gear ahead of time.</p>
+  </div>
+</section>
+
+<!-- ================= SAFETY ================= -->
+<section class="alt" id="safety">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Play Smart</span>
+      <h2>Field <em>Safety</em> Rules</h2>
+      <p>Everyone goes home in one piece. These basics apply to every player, every game.</p>
+    </div>
+    <ol class="rules reveal">
+      <li><div><b>Eyes &amp; face covered</b><span>Approved eye protection — full-face recommended — must be worn at all times in the play area.</span></div></li>
+      <li><div><b>Barrel discipline</b><span>Muzzle down and safety on outside the play area. Use a barrel cover or bag when off-field.</span></div></li>
+      <li><div><b>Call your hits</b><span>Honesty is the game. When you're hit, call it, raise your hand, and leave the field.</span></div></li>
+      <li><div><b>Mind the limits</b><span>Follow the field's velocity and engagement-distance limits. Chrono checks happen before play.</span></div></li>
+      <li><div><b>Blind-fire is a no</b><span>Always see your target. Never shoot at people who aren't wearing protection.</span></div></li>
+      <li><div><b>Respect everyone</b><span>Be a good teammate and a good opponent. Zero tolerance for harassment or unsafe behavior.</span></div></li>
+    </ol>
+    <p class="note reveal"><b>Age note:</b> Player age minimums and waiver requirements will be posted here — check with us before bringing younger players.</p>
+  </div>
+</section>
+
+<!-- ================= LOCATION ================= -->
+<section id="location">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Coordinates Locked</span>
+      <h2>Find the <em>Field</em></h2>
+      <p>We play just outside Billings in the heart of Big Sky Country.</p>
+    </div>
+    <div class="loc">
+      <div class="info reveal">
+        <div class="coords">
+          <small>Field Coordinates</small>
+          46°05'07.2"N &nbsp;108°33'27.4"W
+          <small style="margin-top:8px">Decimal</small>
+          46.08533, &minus;108.55761
+        </div>
+        <ul class="checklist">
+          <li>Billings, Montana</li>
+          <li>Ample parking area near the staging zone</li>
+          <li>Check Facebook for game-day updates and any weather changes</li>
+          <li>Wear boots or sturdy shoes and dress for Montana weather</li>
+        </ul>
+        <div class="btns">
+          <a class="btn solid" href="https://www.google.com/maps/search/?api=1&query=46.085333,-108.557611" target="_blank" rel="noopener">Get Directions</a>
+          <a class="btn ghost" href="https://www.openstreetmap.org/?mlat=46.085333&mlon=-108.557611#map=15/46.085333/-108.557611" target="_blank" rel="noopener">Open in OSM</a>
+        </div>
+      </div>
+      <div class="map reveal">
+        <iframe title="Map of the BigSky Raptors airsoft field near Billings, Montana" loading="lazy"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-108.5776%2C46.0753%2C-108.5376%2C46.0953&amp;layer=mapnik&amp;marker=46.085333%2C-108.557611"></iframe>
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SCHEDULE ================= -->
+<section class="alt" id="schedule">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Mark Your Calendar</span>
+      <h2>Game <em>Days</em></h2>
+      <p>Placeholder schedule — we'll swap in real dates and times. Latest updates always post on Facebook.</p>
+    </div>
+    <div class="sched">
+      <div class="card reveal"><div class="when">Day / Time TBD</div><h3>Open Play</h3><p>Drop-in games for players of every level. Bring your own gear or rent ours.</p></div>
+      <div class="card reveal"><div class="when">Day / Time TBD</div><h3>Beginner Briefing</h3><p>First time? Get a safety walkthrough and gear fitting before your first game.</p></div>
+      <div class="card reveal"><div class="when">Day / Time TBD</div><h3>Special Events</h3><p>Themed scenarios, night ops, and team challenges announced ahead of time.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Good to Know</span>
+      <h2>Frequently <em>Asked</em></h2>
+    </div>
+    <div class="faq reveal">
+      <details><summary>Do I need my own gear?</summary><p>No. We offer rental M4-style rifles and face masks. Details and pricing coming soon.</p></details>
+      <details><summary>What should I wear?</summary><p>Long sleeves, long pants, sturdy shoes or boots, and layers for Montana weather. Earth tones or camo are great, but not required.</p></details>
+      <details><summary>Does airsoft hurt?</summary><p>You'll feel a small sting when hit, but protective gear and clothing help a lot. Protective eyewear is mandatory, and we recommend full-face coverage.</p></details>
+      <details><summary>Is there a minimum age?</summary><p>Age requirements and waiver details are being finalized. Message us on Facebook and we'll get you an answer.</p></details>
+      <details><summary>How do I sign up?</summary><p>Send us a message on Facebook. We'll get you set up for the next game day.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Roger That</span>
+      <h2>Contact <em>Us</em></h2>
+      <p>Questions, rentals, team joins, or event bookings — the fastest way to reach the Raptors is on Facebook.</p>
+    </div>
+    <div class="btns reveal">
+      <a class="btn solid" href="https://www.facebook.com/bigskyraptors" target="_blank" rel="noopener">
+        <svg width="20" height="20" aria-hidden="true"><use href="#i-fb"/></svg> Follow us on Facebook
+      </a>
+    </div>
+    <div class="contact-cards">
+      <div class="card reveal"><svg class="ico"><use href="#i-fb"/></svg><h3>Facebook</h3><p>Send a message, catch game announcements, and see photos from the field.</p><p style="margin-top:10px"><a class="link" href="https://www.facebook.com/bigskyraptors" target="_blank" rel="noopener">facebook.com/bigskyraptors &rarr;</a></p></div>
+      <div class="card reveal"><svg class="ico"><use href="#i-map"/></svg><h3>Location</h3><p>Billings, Montana<br>46°05'07.2"N 108°33'27.4"W</p><p style="margin-top:10px"><a class="link" href="#location">See the map &rarr;</a></p></div>
+      <div class="card reveal"><svg class="ico"><use href="#i-mail"/></svg><h3>Email &amp; Phone</h3><p>Coming soon. For now, Facebook is the best way to reach us.</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fl">
+      <img src="images/bsr_logo.png" alt="BSR emblem">
+      <div>&copy; <span id="yr">2026</span> BigSky Raptors Airsoft &middot; Billings, Montana</div>
+    </div>
+    <div>
+      <a href="#about">About</a> &nbsp;&middot;&nbsp; <a href="#rentals">Rentals</a> &nbsp;&middot;&nbsp; <a href="#location">Location</a> &nbsp;&middot;&nbsp;
+      <a href="https://www.facebook.com/bigskyraptors" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // mobile menu
+  const btn=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+  btn.addEventListener('click',()=>{const o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');btn.setAttribute('aria-expanded','false')}));
+  // year
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  // reveal on scroll
+  const els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+    els.forEach(el=>io.observe(el));
+  } else els.forEach(el=>el.classList.add('in'));
+</script>
+</body>
+</html>
